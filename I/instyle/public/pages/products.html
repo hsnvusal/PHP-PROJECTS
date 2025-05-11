@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instyle - Products</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- font -->
+    <link rel="stylesheet" href="../style/font/stylesheet.css">
+
+    <!-- jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <section>
+        <div class="product-inner">
+            <header>
+                <div class="header-content-parent">
+                    <div class="container">
+                        <div class="header-content-child">
+                            <div class="header-left">
+                                <button type="button" class="header-menu-button">
+                                    <img src="../media/menu.png" alt="">
+                                </button>
+                                <div class="lang">
+                                    <div class="lang-head">
+                                        az
+                                    </div>
+                                    <div class="lang-body">
+                                        <a href="">
+                                            az
+                                        </a>
+                                        <a href="">
+                                            ru
+                                        </a>
+                                        <a href="">
+                                            en
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="logo">
+                                <img src="../media/logo.svg" alt="">
+                            </a>
+                            <div class="header-right">
+                                <a href="" class="header-right-button">
+                                    <img src="../media/search.svg" alt="">
+                                </a>
+                                <button class="header-right-button">
+                                    <img src="../media/account.svg" alt="">
+                                </button>
+                                <a href="" class="header-right-button">
+                                    <img src="../media/cart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="page-header">
+                    <div class="breadcrumb">
+                        <a href="">
+                            HOME
+                        </a>
+                        <a href="">
+                            MEN
+                        </a>
+                        <span>
+                            T-SHIRT
+                        </span>
+                    </div>
+                    <div class="title">
+                        T-shirts
+                    </div>
+                    <button type="button" class="filter-button-menu">
+                        Filter
+                    </button>
+                    <div class="button-filter-close">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d)">
+                                <path
+                                    d="M23 37C32.9411 37 41 28.9411 41 19C41 9.05887 32.9411 1 23 1C13.0589 1 5 9.05887 5 19C5 28.9411 13.0589 37 23 37Z"
+                                    fill="#F9F9F9" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M28.3976 13.6L17.5977 24.4" stroke="#666666" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.5977 13.6L28.3976 24.4" stroke="#666666" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d" x="0.5" y="0.5" width="45" height="45"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.4 0 0 0 0 0.4 0 0 0 0 0.4 0 0 0 0.12 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <form action="">
+                        <div class="page-header-filter">
+                            <div class="filter-button">
+                                <button type="button">Price
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#222222" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div class="products-filter">
+                                    <div class="products-filter-inner">
+                                        <input type="text" class="js-range-slider" name="my_range" value=""
+                                            data-skin="round" data-type="double" data-min="0" data-max="1000"
+                                            data-grid="false" />
+
+                                        <div class="reange-slider-filter">
+                                            <input type="number" maxlength="4" value="0" class="from" />
+                                            <input type="number" maxlength="4" value="1000" class="to" />
+                                        </div>
+                                        <button type="submit" class="filter-price-search">
+                                            Axtar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-button">
+                                <button type="button">Brand
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#222222" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </button>
+                                <div class="products-filter">
+                                    <div class="products-filter-inner">
+                                        <label class="checkbox-parent ">
+                                            <p>INCERUN</p>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="checkbox-parent ">
+                                            <p>CHARMKPR</p>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="checkbox-parent ">
+                                            <p>ESCATCH</p>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="checkbox-parent ">
+                                            <p>TWOSIDED</p>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-button">
+                                <button type="button">Size
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#222222" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div class="products-filter">
+                                    <div class="products-filter-inner">
+                                        <div class="size-products">
+                                            <label for="" class="size-checkbox">
+                                                <input type="checkbox">
+                                                <div>
+                                                    S
+                                                </div>
+                                            </label>
+                                            <label for="" class="size-checkbox">
+                                                <input type="checkbox">
+                                                <div>
+                                                    M
+                                                </div>
+                                            </label>
+                                            <label for="" class="size-checkbox">
+                                                <input type="checkbox">
+                                                <div>
+                                                    L
+                                                </div>
+                                            </label>
+                                            <label for="" class="size-checkbox">
+                                                <input type="checkbox">
+                                                <div>
+                                                    XL
+                                                </div>
+                                            </label>
+                                            <label for="" class="size-checkbox">
+                                                <input type="checkbox">
+                                                <div>
+                                                    XS
+                                                </div>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-button">
+
+                                <button type="button">Color
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#222222" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div class="products-filter">
+                                    <div class="products-filter-inner">
+                                        <div class="color-products">
+                                            <label class="radio-parent">
+                                                <input type="checkbox" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-parent">
+                                                <input type="checkbox" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-parent">
+                                                <input type="checkbox" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-parent-button">
+                                <button class="apply-button-filter">APPLY</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="xl-4 lg-4 md-4 dm-12 sm-12">
+                        <a href="" class="product-card">
+                            <div class="product-card-header">
+                                <img src="../media/img.png" alt="">
+                                <label class="product-hearth">
+                                    <input class="like-button" type="checkbox" data-pid="230">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="23.25" stroke="#222222"
+                                            stroke-width="1.5" />
+                                        <path class="fil0 str0"
+                                            d="M32.4578 17.5422C31.9691 17.0533 31.3889 16.6654 30.7503 16.4008C30.1117 16.1362 29.4272 16 28.7359 16C28.0446 16 27.3601 16.1362 26.7215 16.4008C26.0829 16.6654 25.5026 17.0533 25.0139 17.5422L23.9997 18.5564L22.9855 17.5422C21.9984 16.5551 20.6596 16.0005 19.2636 16.0005C17.8676 16.0005 16.5288 16.5551 15.5417 17.5422C14.5546 18.5293 14 19.8681 14 21.2641C14 22.6601 14.5546 23.9989 15.5417 24.9861L16.5559 26.0003L23.9997 33.4441L31.4436 26.0003L32.4578 24.9861C32.9467 24.4974 33.3346 23.9171 33.5992 23.2785C33.8638 22.6399 34 21.9554 34 21.2641C34 20.5728 33.8638 19.8883 33.5992 19.2497C33.3346 18.6111 32.9467 18.0309 32.4578 17.5422V17.5422Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+
+                            </div>
+                            <div class="product-card-body">
+                                <h4>
+                                    Yin Yang Animal Print Open Front Street Loose Kimono
+                                </h4>
+                                <span class="price">
+                                    17.99$
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="xl-4 lg-4 md-4 dm-12 sm-12">
+                        <a href="" class="product-card">
+                            <div class="product-card-header">
+                                <img src="../media/img.png" alt="">
+                                <label class="product-hearth">
+                                    <input class="like-button" type="checkbox" data-pid="230">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="23.25" stroke="#222222"
+                                            stroke-width="1.5" />
+                                        <path class="fil0 str0"
+                                            d="M32.4578 17.5422C31.9691 17.0533 31.3889 16.6654 30.7503 16.4008C30.1117 16.1362 29.4272 16 28.7359 16C28.0446 16 27.3601 16.1362 26.7215 16.4008C26.0829 16.6654 25.5026 17.0533 25.0139 17.5422L23.9997 18.5564L22.9855 17.5422C21.9984 16.5551 20.6596 16.0005 19.2636 16.0005C17.8676 16.0005 16.5288 16.5551 15.5417 17.5422C14.5546 18.5293 14 19.8681 14 21.2641C14 22.6601 14.5546 23.9989 15.5417 24.9861L16.5559 26.0003L23.9997 33.4441L31.4436 26.0003L32.4578 24.9861C32.9467 24.4974 33.3346 23.9171 33.5992 23.2785C33.8638 22.6399 34 21.9554 34 21.2641C34 20.5728 33.8638 19.8883 33.5992 19.2497C33.3346 18.6111 32.9467 18.0309 32.4578 17.5422V17.5422Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+
+                            </div>
+                            <div class="product-card-body">
+                                <h4>
+                                    Yin Yang Animal Print Open Front Street Loose Kimono
+                                </h4>
+                                <span class="price">
+                                    17.99$
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="xl-4 lg-4 md-4 dm-12 sm-12">
+                        <a href="" class="product-card">
+                            <div class="product-card-header">
+                                <img src="../media/img.png" alt="">
+                                <label class="product-hearth">
+                                    <input class="like-button" type="checkbox" data-pid="230">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="23.25" stroke="#222222"
+                                            stroke-width="1.5" />
+                                        <path class="fil0 str0"
+                                            d="M32.4578 17.5422C31.9691 17.0533 31.3889 16.6654 30.7503 16.4008C30.1117 16.1362 29.4272 16 28.7359 16C28.0446 16 27.3601 16.1362 26.7215 16.4008C26.0829 16.6654 25.5026 17.0533 25.0139 17.5422L23.9997 18.5564L22.9855 17.5422C21.9984 16.5551 20.6596 16.0005 19.2636 16.0005C17.8676 16.0005 16.5288 16.5551 15.5417 17.5422C14.5546 18.5293 14 19.8681 14 21.2641C14 22.6601 14.5546 23.9989 15.5417 24.9861L16.5559 26.0003L23.9997 33.4441L31.4436 26.0003L32.4578 24.9861C32.9467 24.4974 33.3346 23.9171 33.5992 23.2785C33.8638 22.6399 34 21.9554 34 21.2641C34 20.5728 33.8638 19.8883 33.5992 19.2497C33.3346 18.6111 32.9467 18.0309 32.4578 17.5422V17.5422Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+
+                            </div>
+                            <div class="product-card-body">
+                                <h4>
+                                    Yin Yang Animal Print Open Front Street Loose Kimono
+                                </h4>
+                                <span class="price">
+                                    17.99$
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="xl-4 lg-4 md-4 dm-12 sm-12">
+                        <a href="" class="product-card">
+                            <div class="product-card-header">
+                                <img src="../media/img.png" alt="">
+                                <label class="product-hearth">
+                                    <input class="like-button" type="checkbox" data-pid="230">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="23.25" stroke="#222222"
+                                            stroke-width="1.5" />
+                                        <path class="fil0 str0"
+                                            d="M32.4578 17.5422C31.9691 17.0533 31.3889 16.6654 30.7503 16.4008C30.1117 16.1362 29.4272 16 28.7359 16C28.0446 16 27.3601 16.1362 26.7215 16.4008C26.0829 16.6654 25.5026 17.0533 25.0139 17.5422L23.9997 18.5564L22.9855 17.5422C21.9984 16.5551 20.6596 16.0005 19.2636 16.0005C17.8676 16.0005 16.5288 16.5551 15.5417 17.5422C14.5546 18.5293 14 19.8681 14 21.2641C14 22.6601 14.5546 23.9989 15.5417 24.9861L16.5559 26.0003L23.9997 33.4441L31.4436 26.0003L32.4578 24.9861C32.9467 24.4974 33.3346 23.9171 33.5992 23.2785C33.8638 22.6399 34 21.9554 34 21.2641C34 20.5728 33.8638 19.8883 33.5992 19.2497C33.3346 18.6111 32.9467 18.0309 32.4578 17.5422V17.5422Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+
+                            </div>
+                            <div class="product-card-body">
+                                <h4>
+                                    Yin Yang Animal Print Open Front Street Loose Kimono
+                                </h4>
+                                <span class="price">
+                                    17.99$
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="xl-4 lg-4 md-4 dm-12 sm-12">
+                        <a href="" class="product-card">
+                            <div class="product-card-header">
+                                <img src="../media/img.png" alt="">
+                                <label class="product-hearth">
+                                    <input class="like-button" type="checkbox" data-pid="230">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="23.25" stroke="#222222"
+                                            stroke-width="1.5" />
+                                        <path class="fil0 str0"
+                                            d="M32.4578 17.5422C31.9691 17.0533 31.3889 16.6654 30.7503 16.4008C30.1117 16.1362 29.4272 16 28.7359 16C28.0446 16 27.3601 16.1362 26.7215 16.4008C26.0829 16.6654 25.5026 17.0533 25.0139 17.5422L23.9997 18.5564L22.9855 17.5422C21.9984 16.5551 20.6596 16.0005 19.2636 16.0005C17.8676 16.0005 16.5288 16.5551 15.5417 17.5422C14.5546 18.5293 14 19.8681 14 21.2641C14 22.6601 14.5546 23.9989 15.5417 24.9861L16.5559 26.0003L23.9997 33.4441L31.4436 26.0003L32.4578 24.9861C32.9467 24.4974 33.3346 23.9171 33.5992 23.2785C33.8638 22.6399 34 21.9554 34 21.2641C34 20.5728 33.8638 19.8883 33.5992 19.2497C33.3346 18.6111 32.9467 18.0309 32.4578 17.5422V17.5422Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+
+                            </div>
+                            <div class="product-card-body">
+                                <h4>
+                                    Yin Yang Animal Print Open Front Street Loose Kimono
+                                </h4>
+                                <span class="price">
+                                    17.99$
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="xl-4 lg-4 md-4 dm-12 sm-12">
+                        <a href="" class="product-card">
+                            <div class="product-card-header">
+                                <img src="../media/img.png" alt="">
+                                <label class="product-hearth">
+                                    <input class="like-button" type="checkbox" data-pid="230">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="23.25" stroke="#222222"
+                                            stroke-width="1.5" />
+                                        <path class="fil0 str0"
+                                            d="M32.4578 17.5422C31.9691 17.0533 31.3889 16.6654 30.7503 16.4008C30.1117 16.1362 29.4272 16 28.7359 16C28.0446 16 27.3601 16.1362 26.7215 16.4008C26.0829 16.6654 25.5026 17.0533 25.0139 17.5422L23.9997 18.5564L22.9855 17.5422C21.9984 16.5551 20.6596 16.0005 19.2636 16.0005C17.8676 16.0005 16.5288 16.5551 15.5417 17.5422C14.5546 18.5293 14 19.8681 14 21.2641C14 22.6601 14.5546 23.9989 15.5417 24.9861L16.5559 26.0003L23.9997 33.4441L31.4436 26.0003L32.4578 24.9861C32.9467 24.4974 33.3346 23.9171 33.5992 23.2785C33.8638 22.6399 34 21.9554 34 21.2641C34 20.5728 33.8638 19.8883 33.5992 19.2497C33.3346 18.6111 32.9467 18.0309 32.4578 17.5422V17.5422Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+
+                            </div>
+                            <div class="product-card-body">
+                                <h4>
+                                    Yin Yang Animal Print Open Front Street Loose Kimono
+                                </h4>
+                                <span class="price">
+                                    17.99$
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+</body>
+
+</html>
