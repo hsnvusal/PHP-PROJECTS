@@ -1,31 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Yonetim;
 
-use App\Models\Urun;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class UrunController extends Controller
+class AnasayfaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index($slug_urunadi)
+    public function index()
     {
-        $urun = Urun::whereSlug($slug_urunadi)->firstOrFail();
-        $kategoriler = $urun->kategoriler()->distinct()->get();
-        return view('urun',compact('urun','kategoriler'));
-    }
-
-
-    public function ara(Request $request)
-    {
-        $aranan = $request->input('aranan');
-        $urunler = Urun::where('urun_adi', 'like', "%$aranan%")
-            ->orWhere('aciklama', 'like', "%$aranan%")
-            ->paginate(2);
-        $request->flash();
-        return view('arama',compact('urunler'));
+        return view('yonetim.anasayfa');
     }
 
     /**

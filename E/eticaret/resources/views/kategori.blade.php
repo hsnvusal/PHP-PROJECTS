@@ -33,8 +33,8 @@
                 <div class="products bg-content">
                     @if(count($urunler)>0)
                     Sırala
-                    <a href="#" class="btn btn-default">Çok Satanlar</a>
-                    <a href="#" class="btn btn-default">Yeni Ürünler</a>
+                    <a href="?order=coksatanlar" class="btn btn-default">Çok Satanlar</a>
+                    <a href="?order=yeni" class="btn btn-default">Yeni Ürünler</a>
                     <hr>
                     @endif
 
@@ -51,6 +51,7 @@
                             </div>
                         @endforeach
                     </div>
+                    {{$urunler->links()}}
                 </div>
             </div>
         </div>

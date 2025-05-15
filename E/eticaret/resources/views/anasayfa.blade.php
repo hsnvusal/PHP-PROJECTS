@@ -3,6 +3,7 @@
 
 @section('content')
     <div class="container">
+
         <div class="row">
             <div class="col-md-3">
                 <div class="panel panel-default">
@@ -70,6 +71,13 @@
                                 <a href="{{route('urun',$urun_detay->urun->slug)}}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgaGi6lJkDMy6bprnjJUmlrZyTRRmIjtO1w&s"></a>
                                 <p><a href="{{route('urun',$urun_detay->urun->slug)}}">{{$urun_detay->urun->urun_adi}}</a></p>
                                 <p class="price">{{$urun_detay->urun->fiyati}} ₺</p>
+{{--                                <form method="POST" action="{{ route('basket.add') }}">--}}
+{{--                                    @csrf--}}
+{{--                                    <input type="hidden" name="id" value="{{ $urun_detay->urun->id }}">--}}
+{{--                                    <input type="hidden" name="urun_adi" value="{{ $urun_detay->urun->urun_adi }}">--}}
+{{--                                    <input type="hidden" name="fiyati" value="{{ $urun_detay->urun->fiyati }}">--}}
+{{--                                    <button type="submit">Səbətə əlavə et</button>--}}
+{{--                                </form>--}}
                             </div>
                         @endforeach
                     </div>
