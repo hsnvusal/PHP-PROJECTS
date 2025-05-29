@@ -17,15 +17,23 @@ class KategoriController extends Controller
     public function index(Request $request)
     {
         $request->flash();
-        if ($request->filled('aranan')){
+        if ($request->filled('aranan') || $request->filled('ust_id')){
             $aranan = $request->aranan;
-            $list = Kategori::where('kategori_adi','like',"%$aranan%")->orderByDesc('created_at')->paginate(8);
+            $ust_id = $request->ust_id;
+            $list = Kategori::with('ust_kategori')
+                ->where('kategori_adi','like',"%$aranan%")
+                ->where('ust_id','like',"%$ust_id%")
+                ->orderByDesc('created_at')
+                ->paginate(2)
+                ->appends(['aranan'=>$aranan , 'ust_id'=>$ust_id])
+            ;
         }
         else {
-            $list = Kategori::orderBy('created_at')->paginate(8);
-
+            $list = Kategori::with('ust_kategori')->orderBy('created_at')->paginate(8);
         }
-        return view('yonetim.kategori.index',compact('list'));
+
+        $anakatagoriler =  Kategori::whereRaw('ust_id is null')->get();
+        return view('yonetim.kategori.index',compact('list','anakatagoriler'));
     }
 
     public function form($id = 0)

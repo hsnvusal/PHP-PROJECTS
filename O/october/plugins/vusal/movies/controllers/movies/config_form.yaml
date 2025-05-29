@@ -1,0 +1,11 @@
+name: Movies
+modelClass: Vusal\Movies\Models\Movie
+form: $/vusal/movies/models/movie/fields.yaml
+defaultRedirect: vusal/movies/movies
+create:
+    redirect: 'vusal/movies/movies/update/:id'
+    redirectClose: vusal/movies/movies
+update:
+    redirect: vusal/movies/movies
+    redirectClose: vusal/movies/movies
+preview: {  }

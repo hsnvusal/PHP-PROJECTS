@@ -1,0 +1,10 @@
+name: Genres
+form: $/vusal/movies/models/genre/fields.yaml
+modelClass: Vusal\Movies\Models\Genre
+defaultRedirect: vusal/movies/genres
+create:
+    redirect: 'vusal/movies/genres/update/:id'
+    redirectClose: vusal/movies/genres
+update:
+    redirect: vusal/movies/genres
+    redirectClose: vusal/movies/genres

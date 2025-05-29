@@ -1,0 +1,10 @@
+name: Actors
+form: $/vusal/movies/models/actor/fields.yaml
+modelClass: Vusal\Movies\Models\Actor
+defaultRedirect: vusal/movies/actors
+create:
+    redirect: 'vusal/movies/actors/update/:id'
+    redirectClose: vusal/movies/actors
+update:
+    redirect: vusal/movies/actors
+    redirectClose: vusal/movies/actors

@@ -1,0 +1,12 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+tabs:
+    fields:
+        lastname:
+            label: 'Last Name'
+            span: auto
+            type: text
+            tab: 'Tab 1'

@@ -1,0 +1,14 @@
+url = "/paylasimlar"
+layout = "default"
+title = "Paylaşımlar"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "Heç bir paylaşım yoxdur."
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = "paylasim-detay"
+==
+{% set posts = blogPosts.posts %}
+{% partial 'blog/list' posts=posts postPage='paylasim-detay' %}

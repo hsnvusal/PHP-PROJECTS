@@ -52,7 +52,7 @@
                     <div class="panel-heading">Günün Fırsatı</div>
                     <div class="panel-body">
                         <a href="{{route('urun',$urunler_gunun_firsati->slug)}}">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxlU4UPoPh5DLiMVuipLRqN2JfeFY07UjGVA&s" class="img-responsive">
+                            <img src="/uploads/urunler/{{$urunler_gunun_firsati->detay->urun_resmi}}" class="img-responsive">
                             {{$urunler_gunun_firsati->urun_adi}}
                         </a>
                     </div>

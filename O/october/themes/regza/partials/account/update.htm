@@ -1,0 +1,18 @@
+<form data-request="onUpdateProfile"  data-request-success="alert('Məlumat yeniləndi')" method="post">
+    <label>Name</label>
+    <input type="text" name="name" value="{{ user.first_name  }}">
+
+    <label>Email</label>
+    <input type="email" name="email" value="{{ user.email }}">
+
+    <label>Yeni Şifrə</label>
+    <input type="password" name="password" >
+
+    <label>Yeni Şifrənin Təsdiqi</label>
+    <input type="password" name="password_confirmation">
+
+    <labeL>Bio</labeL>
+    textare
+
+    <button type="submit">Update</button>
+</form>

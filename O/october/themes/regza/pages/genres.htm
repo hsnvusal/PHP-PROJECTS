@@ -1,0 +1,19 @@
+title = "Genres"
+layout = "default"
+url = "/genres/:slug"
+
+[builderDetails]
+modelClass = "Vusal\Movies\Models\Genre"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "genre_title"
+notFoundMessage = "Record not found"
+==
+{% set genres = builderDetails.record %}
+
+<div class="container">
+    <h3>Genres</h3>
+    {% for movie in genres.movies%}
+    {{ movie.name }} <br>
+    {% endfor %}
+</div>

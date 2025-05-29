@@ -1,0 +1,36 @@
+<form data-request="contactForm::onSend" >
+    {{errors.first('name')}}
+
+    <label>Your name</label>
+    <input type="text" name="name">
+    {{errors.first('email')}}
+
+    <label>Your email</label>
+    <input type="email" name="email">
+
+
+    <label>Your message</label>
+    <textarea name="content"></textarea>
+
+    <button type="submit" >Send</button>
+
+<!--    <div class="alert alert-danger" data-validate-error>-->
+<!--        <p data-message></p>-->
+<!--    </div>-->
+
+<!--    <div class="flash error">-->
+<!--        Ooops. Something went wrong please check the requiered fields.-->
+<!--    </div>-->
+
+<!--    <div class="flash success">-->
+<!--        Your message has been sent. Thank you.-->
+<!--    </div>-->
+
+        <ul>
+            {% for error in errors.all() %}
+                <li>{{error}}</li>
+            {% endfor %}
+        </ul>
+</form>
+
+<div id="result"></div>

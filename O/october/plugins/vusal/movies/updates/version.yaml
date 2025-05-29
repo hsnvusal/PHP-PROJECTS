@@ -1,0 +1,26 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table vusal_movies_'
+    - builder_table_create_vusal_movies_.php
+v1.0.3:
+    - 'Updated table vusal_movies_'
+    - builder_table_update_vusal_movies_.php
+v1.0.4:
+    - 'Created table vusal_movies_genres'
+    - builder_table_create_vusal_movies_genres.php
+v1.0.5:
+    - 'Created table vusal_movies_movies_genres'
+    - builder_table_create_vusal_movies_movies_genres.php
+v1.0.6:
+    - 'Updated table vusal_movies_'
+    - builder_table_update_vusal_movies__2.php
+v1.0.7:
+    - 'Created table vusal_movies_actors'
+    - builder_table_create_vusal_movies_actors.php
+v1.0.8:
+    - 'Updated table vusal_movies_'
+    - builder_table_update_vusal_movies__3.php
+v1.0.9:
+    - 'Created table vusal_movies_actors_movies'
+    - builder_table_create_vusal_movies_actors_movies.php

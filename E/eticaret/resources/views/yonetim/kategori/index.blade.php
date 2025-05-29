@@ -15,6 +15,13 @@
             <div class="form-group">
                 <label for="aranan">Ara</label>
                 <input type="text" class="form-control form-control-sm" name="aranan" id="aranan" placeholder="Ad,Email,Ara..." value="{{old('aranan')}}">
+                <label for="ust_id" >Ust Kategori</label>
+                <select name="ust_id" id="ust_id" class="form-control">
+                    <option value="">Seciniz</option>
+                    @foreach($anakatagoriler as $kategori)
+                        <option value="{{$kategori->id}}" {{old('ust_id')== $kategori->id ? 'selected' : '' }}>{{$kategori->kategori_adi}}</option>
+                    @endforeach
+                </select>
             </div>
             <button type="submit" class="btn btn-primary">Ara</button>
             <a href="{{route('yonetim.kategori')}}" class="btn btn-primary">Temizle</a>
@@ -28,15 +35,22 @@
         <thead class="thead-dark">
         <tr>
             <th>#</th>
+            <th>Ust Kategori</th>
             <th>Slug</th>
             <th>Kategori Adi</th>
             <th>Kayit Tarihi</th>
         </tr>
         </thead>
         <tbody>
+        @if(count($list) ==0)
+            <tr>
+                <td colspan="6" class="text-center">Kayit Bulunamadi</td>
+            </tr>
+        @endif
         @foreach($list as $enrty)
         <tr>
             <td>{{$enrty->id}}</td>
+            <td>{{$enrty->ust_kategori->kategori_adi}}</td>
             <td>{{$enrty->slug}}</td>
             <td>{{$enrty->kategori_adi}}</td>
             <td>{{$enrty->created_at}}</td>

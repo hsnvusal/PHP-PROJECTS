@@ -1,0 +1,11 @@
+{% for post in posts %}
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 15px;">
+    <h2>
+        <a href="{{ post.url(postPage) }}">{{ post.title }}</a>
+    </h2>
+    <p><small>{{ post.published_at|date('d.m.Y') }}</small></p>
+    <p>{{ post.summary|raw }}</p>
+</div>
+{% else %}
+<p>Heç bir yazı tapılmadı.</p>
+{% endfor %}

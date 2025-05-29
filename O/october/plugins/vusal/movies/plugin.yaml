@@ -1,0 +1,20 @@
+plugin:
+    name: 'vusal.movies::lang.plugin.name'
+    description: 'vusal.movies::lang.plugin.description'
+    author: Vusal
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: vusal/movies/movies
+        icon: icon-video-camera
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: vusal/movies/genres
+                icon: icon-tag
+            side-menu-item2:
+                label: Actors
+                url: vusal/movies/actors
+                icon: icon-user

@@ -1,0 +1,20 @@
+<h2>Login</h2>
+<form data-request="onSignin" data-request-success="window.location.href='/';" method="post" >
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <label>
+        <input type="checkbox" name="remember"> Remember me
+    </label>
+
+    <button type="submit">Login</button>
+</form>
+
+<script>
+    document.addEventListener('ajaxBeforeSend', function (e) {
+        console.log('🟢 Gönderilen:', e.detail.data);
+    });
+</script>

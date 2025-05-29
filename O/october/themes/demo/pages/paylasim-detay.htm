@@ -1,0 +1,11 @@
+title = "Post Detayı"
+url = "/paylasimlar/:slug"
+layout = "default"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "kategori"
+==
+<h1>{{ post.title }}</h1>
+<p><small>{{ post.published_at|date('d.m.Y') }}</small></p>
+<div>{{ post.content_html|raw }}</div>

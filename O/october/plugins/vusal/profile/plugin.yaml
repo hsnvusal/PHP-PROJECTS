@@ -1,0 +1,6 @@
+plugin:
+    name: 'vusal.profile::lang.plugin.name'
+    description: 'vusal.profile::lang.plugin.description'
+    author: Vusal
+    icon: oc-icon-adjust
+    homepage: ''

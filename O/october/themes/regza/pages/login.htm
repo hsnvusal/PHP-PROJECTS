@@ -1,0 +1,20 @@
+title = "Login"
+layout = "default"
+url = "/login"
+
+[account]
+[registration]
+[authentication]
+redirect = "/"
+==
+{% if not user %}
+{% partial 'account/signin' %}
+{% partial 'account/register' %}
+{% else %}
+<p>Welcome, {{ user.first_name }}</p>
+{% partial 'account/activation_check' %}
+{% partial 'account/update' %}
+{% partial 'account/deactivate_link' %}
+{% endif %}
+
+

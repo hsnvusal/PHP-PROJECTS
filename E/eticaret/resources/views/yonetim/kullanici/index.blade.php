@@ -36,6 +36,11 @@
         </tr>
         </thead>
         <tbody>
+        @if(count($list) ==0)
+            <tr>
+                <td colspan="7" class="text-center">Kayit Bulunamadi</td>
+            </tr>
+        @endif
         @foreach($list as $enrty)
         <tr>
             <td>{{$enrty->id}}</td>

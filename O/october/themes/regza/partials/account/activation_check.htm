@@ -1,0 +1,3 @@
+{% if not user.is_activated %}
+<p>Please activate your account. <a href="{{ url('account/activate') }}">Resend activation email</a></p>
+{% endif %}

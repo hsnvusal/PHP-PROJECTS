@@ -1,0 +1,35 @@
+url = "/movies/:page?"
+layout = "default"
+title = "Movies"
+
+[builderList]
+modelClass = "Vusal\Movies\Models\Movie"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "movie-single"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+recordsPerPage = 0
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+
+
+<div class="movie-list">
+    {% for movie in records %}
+    <div class="movie-card">
+        <h2><a href="{{ 'movie-single'|page({ slug: movie.slug }) }}">{{ movie.name }}</a></h2>
+
+        <p><strong>Year:</strong> {{ movie.year }}</p>
+
+        <p>
+            {{ html_limit(movie.description, 150)|raw }}
+        </p>
+
+    </div>
+    {% else %}
+    <p>Heç bir film tapılmadı.</p>
+    {% endfor %}
+</div>

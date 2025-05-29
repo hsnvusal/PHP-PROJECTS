@@ -29,6 +29,14 @@ Route::group(['prefix'=>'yonetim','namespace'=>'Yonetim'],function (){
             Route::get('/sil/{id}',[\App\Http\Controllers\Yonetim\KategoriController::class,'sil'])->name('yonetim.kategori.sil');
         });
 
+        Route::group(['prefix'=>'urun'],function () {
+            Route::match(['get','post'],'/',[\App\Http\Controllers\Yonetim\UrunController::class,'index'])->name('yonetim.urun');
+            Route::get('/yeni',[\App\Http\Controllers\Yonetim\UrunController::class,'form'])->name('yonetim.urun.yeni');
+            Route::get('/duzenle/{id}',[\App\Http\Controllers\Yonetim\UrunController::class,'form'])->name('yonetim.urun.duzenle');
+            Route::post('/kaydet/{id?}',[\App\Http\Controllers\Yonetim\UrunController::class,'kaydet'])->name('yonetim.urun.kaydet');
+            Route::get('/sil/{id}',[\App\Http\Controllers\Yonetim\UrunController::class,'sil'])->name('yonetim.urun.sil');
+        });
+
 
     });
 
